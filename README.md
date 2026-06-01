@@ -2,7 +2,7 @@
 
 Submitted by: **Ziona Agyemang**
 
-This web app: **A gaming events community board built with React and Vite, themed around a dark forest guild hall aesthetic. It displays 9 unique gaming tournament and event cards across categories including FPS, Fighting, Strategy, RPG, and Tabletop. Each card shows event-specific images, dates, locations, open registration spots, and prize pools. Users can filter events by category using an animated filter bar that glows amber on the active selection.**
+This web app: **A gaming events community board built with React and Vite, themed around a dark forest guild hall aesthetic. It displays 9 unique gaming tournament and event cards across categories[...]
 
 Time spent: **8** hours spent in total
 
@@ -24,7 +24,7 @@ The following **optional** features are implemented:
   - [x] All cards have buttons or links in addition to text
 - [ ] The site is responsive for both desktop and mobile formats
   - [ ] Web app is shown in a mobile format
-  - [ ] **Video Walkthrough Special Instructions**: To ease the grading process, please use Chrome Developer Tools' "Toggle Device" button to demonstrate that your web application's responsiveness in both a desktop *and* a mobile format. Detailed instructions can be found below this stretch feature on the project page. 
+  - [ ] **Video Walkthrough Special Instructions**: To ease the grading process, please use Chrome Developer Tools' "Toggle Device" button to demonstrate that your web application's responsiveness[...]
 
 The following **additional** features are implemented:
 
@@ -39,11 +39,11 @@ Here's a walkthrough of implemented required features:
 
 <img src='public/web102-project-one-community-board.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-GIF created with ScreenToGif
+GIF created with LiceCap
 
 ## Notes
 
-The biggest challenge was getting the CSS Module class names to work correctly with the dynamic card type system — since each card type needs a different color accent, I had to map event type strings to their corresponding module class references in JavaScript rather than building class names dynamically as strings (which CSS Modules don't support). Setting up the filter state in the parent App.jsx component and passing it down as props to both FilterBar and the card grid also took some thought to get right, since the tally bar needed access to the already-filtered array rather than the full dataset.
+The biggest challenge was getting the CSS Module class names to work correctly with the dynamic card type system — since each card type needs a different color accent, I had to map event type st[...]
 
 ## License
 
