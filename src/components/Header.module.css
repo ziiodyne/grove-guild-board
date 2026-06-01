@@ -1,0 +1,84 @@
+.headerBand {
+  background: linear-gradient(180deg, var(--bark-dark) 0%, var(--bark-mid) 60%, #2a1a0a 100%);
+  border-bottom: 3px solid var(--bark-warm);
+  padding: 2.5rem 2rem 2rem;
+  position: relative;
+  text-align: center;
+}
+
+.headerBand::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 5%;
+  right: 5%;
+  height: 4px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--parchment-dark) 0px,
+    var(--parchment-dark) 8px,
+    transparent 8px,
+    transparent 14px
+  );
+}
+
+.runeRow {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 0.6rem;
+  opacity: 0.45;
+  font-size: 10px;
+  letter-spacing: 0.4em;
+  color: var(--parchment-dark);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 4vw, 2.2rem);
+  font-weight: 700;
+  color: var(--parchment);
+  letter-spacing: 0.06em;
+  line-height: 1.1;
+}
+
+.sub {
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 0.35em;
+  color: var(--parchment-dark);
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+}
+
+.leafDivider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.leafLine {
+  height: 1px;
+  width: 60px;
+  background: linear-gradient(90deg, transparent, var(--bark-warm));
+}
+
+.leafLineR {
+  background: linear-gradient(90deg, var(--bark-warm), transparent);
+}
+
+.gem {
+  width: 8px;
+  height: 8px;
+  background: var(--amber-glow);
+  transform: rotate(45deg);
+  border-radius: 1px;
+}
+
+.gemSmall {
+  background: var(--parchment-dark);
+  width: 5px;
+  height: 5px;
+}

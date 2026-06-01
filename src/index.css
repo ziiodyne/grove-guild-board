@@ -1,0 +1,38 @@
+:root {
+  --moss-deep: #1a2a1a;
+  --moss-mid: #2d4a2d;
+  --moss-light: #3d6e3d;
+  --bark-dark: #3b2a1a;
+  --bark-mid: #5c3d22;
+  --bark-warm: #7a5230;
+  --parchment: #e8d9b5;
+  --parchment-dark: #c4a96a;
+  --amber-glow: #d4820a;
+  --leaf: #7ab648;
+  --cream: #f5ead0;
+
+  --font-display: 'Cinzel Decorative', serif;
+  --font-body: 'Josefin Sans', sans-serif;
+  --font-italic: 'Crimson Pro', serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  min-height: 100vh;
+}
+
+body {
+  font-family: var(--font-body);
+  background: linear-gradient(160deg, var(--moss-deep) 0%, #0f1f0f 40%, #1c1408 100%);
+  background-attachment: fixed;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}

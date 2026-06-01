@@ -1,0 +1,42 @@
+.filterBar {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  padding: 1.5rem 1rem 0.5rem;
+}
+
+.filterBtn {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 2px;
+  border: 1px solid var(--bark-warm);
+  background: transparent;
+  color: var(--parchment-dark);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.filterBtn:hover {
+  background: rgba(122, 82, 48, 0.3);
+  color: var(--cream);
+}
+
+.filterBtn.active {
+  background: var(--bark-warm);
+  color: var(--cream);
+  border-color: var(--parchment-dark);
+  animation: emberPulse 2.2s ease-in-out infinite;
+}
+
+@keyframes emberPulse {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(212, 130, 10, 0.55), 0 0 22px rgba(212, 130, 10, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 16px rgba(212, 130, 10, 0.85), 0 0 36px rgba(212, 130, 10, 0.4);
+  }
+}

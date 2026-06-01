@@ -1,0 +1,27 @@
+.tallyBar {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 1.5rem 1rem 0.5rem;
+  border-top: 1px solid rgba(122, 82, 48, 0.2);
+  margin: 1rem 1.5rem 0;
+}
+
+.tallyItem {
+  text-align: center;
+}
+
+.tallyNum {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--parchment);
+  display: block;
+}
+
+.tallyLabel {
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--moss-light);
+}
