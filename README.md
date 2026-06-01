@@ -37,7 +37,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='public/web102-project-one-community-board.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='public/web102-project-one-community-board (1).gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with LiceCap
 
