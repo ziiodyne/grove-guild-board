@@ -2,9 +2,9 @@
 
 Submitted by: **Ziona Agyemang**
 
-This web app: **A gaming events community board with a dark forest guild hall aesthetic. Features 9 unique gaming event cards across categories like FPS, Fighting, Strategy, RPG, and Tabletop — each with event images, dates, locations, open spots, and prize info. Users can filter events by category with an animated active-state filter system.**
+This web app: **A gaming events community board built with React and Vite, themed around a dark forest guild hall aesthetic. It displays 9 unique gaming tournament and event cards across categories including FPS, Fighting, Strategy, RPG, and Tabletop. Each card shows event-specific images, dates, locations, open registration spots, and prize pools. Users can filter events by category using an animated filter bar that glows amber on the active selection.**
 
-Time spent: **X** hours spent in total
+Time spent: **8** hours spent in total
 
 ## Required Features
 
@@ -28,27 +28,22 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-* [x] Category filter buttons with animated amber ember glow on active selection
-* [x] Live tally bar showing event count, open spots, and total prize pool — updates dynamically on filter
-* [x] Game-specific images on each card with hover zoom effect and gradient overlay
-* [x] Color-coded accent stripe per genre (green for FPS, purple for RPG, red for Fighting, etc.)
+* [x] Category filter buttons with an animated amber ember pulse glow on the active selection, which persists until a different filter is chosen
+* [x] Live tally bar displaying event count, total open spots, and combined prize pool — all recalculate dynamically when a filter is applied
+* [x] Game-specific banner images on each card with a smooth hover zoom effect and a gradient overlay for readability
+* [x] Color-coded top accent stripe per genre (green for FPS, purple for RPG, red for Fighting, amber for Strategy, tan for Tabletop)
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented required features:
 
-<img src='web102-project-one-community-board.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='public/web102-project-one-community-board.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+GIF created with ScreenToGif
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+The biggest challenge was getting the CSS Module class names to work correctly with the dynamic card type system — since each card type needs a different color accent, I had to map event type strings to their corresponding module class references in JavaScript rather than building class names dynamically as strings (which CSS Modules don't support). Setting up the filter state in the parent App.jsx component and passing it down as props to both FilterBar and the card grid also took some thought to get right, since the tally bar needed access to the already-filtered array rather than the full dataset.
 
 ## License
 
