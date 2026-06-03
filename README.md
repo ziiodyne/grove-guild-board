@@ -2,7 +2,7 @@
 
 Submitted by: **Ziona Agyemang**
 
-This web app: **A gaming events community board built with React and Vite, themed around a dark forest guild hall aesthetic. It displays 9 unique gaming tournament and event cards across categories[...]
+This web app: **A gaming events community board built with React and Vite, themed around a dark forest guild hall aesthetic. It displays 9 unique gaming tournament and event cards across categories including FPS, Fighting, Strategy, RPG, and Tabletop. Each card shows event-specific images, dates, locations, open registration spots, and prize pools. Users can filter events by category using an animated filter bar that glows amber on the active selection.**
 
 Time spent: **8** hours spent in total
 
@@ -24,12 +24,12 @@ The following **optional** features are implemented:
   - [x] All cards have buttons or links in addition to text
 - [ ] The site is responsive for both desktop and mobile formats
   - [ ] Web app is shown in a mobile format
-  - [ ] **Video Walkthrough Special Instructions**: To ease the grading process, please use Chrome Developer Tools' "Toggle Device" button to demonstrate that your web application's responsiveness[...]
+  - [ ] **Video Walkthrough Special Instructions**: To ease the grading process, please use Chrome Developer Tools' "Toggle Device" button to demonstrate that your web application's responsiveness in both a desktop *and* a mobile format. Detailed instructions can be found below this stretch feature on the project page. 
 
 The following **additional** features are implemented:
 
 * [x] Category filter buttons with an animated amber ember pulse glow on the active selection, which persists until a different filter is chosen
-* [x] Live tally bar displaying event count, total open spots, and combined prize pool — all recalculate dynamically when a filter is applied
+* [x] Live tally bar displaying event count, total open spots, and combined prize pool; all recalculate dynamically when a filter is applied
 * [x] Game-specific banner images on each card with a smooth hover zoom effect and a gradient overlay for readability
 * [x] Color-coded top accent stripe per genre (green for FPS, purple for RPG, red for Fighting, amber for Strategy, tan for Tabletop)
 
@@ -39,11 +39,11 @@ Here's a walkthrough of implemented required features:
 
 <img src='public/web102-project-one-community-board (1).gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-GIF created with LiceCap
+GIF created with LICEcap
 
 ## Notes
 
-The biggest challenge was getting the CSS Module class names to work correctly with the dynamic card type system — since each card type needs a different color accent, I had to map event type st[...]
+The biggest challenge was getting the CSS Module class names to work correctly with the dynamic card type system. Since each card type needs a different color accent, I had to map event type strings to their corresponding module class references in JavaScript rather than building class names dynamically as strings (which CSS Modules don't support). Setting up the filter state in the parent App.jsx component and passing it down as props to both FilterBar and the card grid also took some thought to get right, since the tally bar needed access to the already-filtered array rather than the full dataset.
 
 ## License
 
@@ -59,4 +59,4 @@ The biggest challenge was getting the CSS Module class names to work correctly w
     distributed under the License is distributed on an "AS IS" BASIS,
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
-    limitations under the License.
+    limitations under the License.Sonnet 4.6 Low
